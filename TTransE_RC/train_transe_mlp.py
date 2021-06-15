@@ -9,13 +9,13 @@ import numpy as np
 # dataloader for training
                       #model change
 
-dim=100
-margin=4.0
+dim=200
+margin=8.0
 save_path='./checkpoint/ttranse1.ckpt'
 print(save_path)
     
 train_dataloader = TrainDataLoader(
-	in_path = "./benchmarks/icews05/",
+	in_path = "./benchmarks/icews14/",
 	nbatches = 100,
 	threads = 8, 
 	sampling_mode = "normal", 
@@ -25,7 +25,7 @@ train_dataloader = TrainDataLoader(
 	neg_rel = 0)
 
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/icews05/", "link")
+test_dataloader = TestDataLoader("./benchmarks/icews14/", "link")
 
 # define the model
 transe = TTransE_MLP(
