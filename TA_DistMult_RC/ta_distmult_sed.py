@@ -77,7 +77,7 @@ class TA_DistMult_SED(torch.nn.Module):
         
         rs1,rs2,ro1,ro2= self.rels1_embs(rels), self.rels2_embs(rels), self.relo1_embs(rels), self.relo2_embs(rels)
         
-		h_c= rs1*h - rs2
+        h_c= rs1*h - rs2
         t_c= ro1*t - ro2
 
 

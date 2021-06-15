@@ -2,9 +2,7 @@ import torch
 import numpy as np
 from dataset import Dataset
 from scripts import shredFacts
-from de_distmult import DE_DistMult
-from de_transe import DE_TransE
-from de_simple import DE_SimplE
+
 from measure import Measure
 from ta_distmult_sed import TA_DistMult_SED
 from ta_distmult_mlp import TA_DistMult_MLP
