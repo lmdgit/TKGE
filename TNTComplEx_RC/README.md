@@ -1,4 +1,4 @@
-# Knowledge Base Completion (kbc)
+# TNTComplEx_RC
 This code is modified based on https://github.com/facebookresearch/tkbc
 
 ## Installation
